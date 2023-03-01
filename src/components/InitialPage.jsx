@@ -1,11 +1,11 @@
-import { InitialPageButton, InitialPageContainer, LogoImg, LogoText } from "./components/Shared/InitialPageItems";
-import logo from "./assets/logo.png";
+import { InitialPageButton, InitialPageContainer, LogoImg, LogoText } from "./Shared/InitialPageItems";
+import logo from "../assets/logo.png";
 
 
-export function InitialPage() {
+export function InitialPage({changePage}) {
   return (<InitialPageContainer>
     <LogoImg src={logo} />
     <LogoText>ZapRecall</LogoText>
-    <InitialPageButton>Iniciar Recall!</InitialPageButton>
+    <InitialPageButton onClick={changePage}>Iniciar Recall!</InitialPageButton>
   </InitialPageContainer>)
 }

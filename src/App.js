@@ -1,9 +1,15 @@
+import { QuestionsPage } from "./components/QuestionPage";
 import { InitialPage } from "./components/InitialPage";
+import { useState } from "react";
 
 function App() {
+  const [questionPage, setQuestionPage] = useState(true)
 
+  function changePage(){
+    setQuestionPage(prev=>true)
+  }
   return (<>
-    <InitialPage />
+    {questionPage ? <QuestionsPage /> : <InitialPage changePage={changePage} />}
   </>
   );
 }
