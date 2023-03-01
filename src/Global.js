@@ -1,10 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap');
-</style>
 export const GlobalStyles = createGlobalStyle`
-
-
     *{
         box-sizing:border-box;
         font-family: 'Recursive', sans-serif;
