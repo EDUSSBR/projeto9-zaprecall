@@ -3,8 +3,7 @@ import { InitialPage } from "./components/InitialPage";
 import { useState } from "react";
 
 function App() {
-  const [questionPage, setQuestionPage] = useState(true)
-
+  const [questionPage, setQuestionPage] = useState(false)
   function changePage(){
     setQuestionPage(prev=>true)
   }
