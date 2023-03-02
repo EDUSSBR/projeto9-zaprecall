@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
     *{
+        
         box-sizing:border-box;
         font-family: 'Recursive', sans-serif;
         font-weight: 700;
@@ -11,7 +12,27 @@ export const GlobalStyles = createGlobalStyle`
         width:100%;
         height:100%;
     }
-    button{
-        cursor: pointer;
+
+    @keyframes changeOpacity {
+    0% {
+      opacity: 0;
     }
+    90%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  @keyframes delayDisplay{
+    0% {
+        visibility:hidden;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+      visibility:visible ;
+    }
+  }
+
 `
