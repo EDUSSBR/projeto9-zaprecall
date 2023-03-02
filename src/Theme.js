@@ -4,7 +4,7 @@ const styles = {
     colors: {
         white: "#FFFFFF",
         pinkBg: "#FB6B6B",
-        
+        questionBg: "#FFFFD4",
         welcomeBgBorder: "#DBDBDB",
         welcomeBtnAndBorderColor: "#D70900",
 
