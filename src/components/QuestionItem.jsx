@@ -56,7 +56,7 @@ export const ButtonText = styled.p`
   width:100%;
   word-wrap: break-word;
   margin-bottom: ${({isBiggerThanExpected})=> isBiggerThanExpected ? "4px": '0px'};
-
+  text-align:left;
 `
 export const ButtonImage = styled.img`
 align-self:  ${({ changeBox }) => changeBox ? 'flex-end' : 'center'};

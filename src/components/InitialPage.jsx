@@ -4,6 +4,6 @@ export function InitialPage({changePage}) {
   return (<InitialPageContainer>
     <LogoImg src={logo} />
     <LogoText>ZapRecall</LogoText>
-    <InitialPageButton onClick={changePage}>Iniciar Recall!</InitialPageButton>
+    <InitialPageButton data-test="start-btn" onClick={changePage}>Iniciar Recall!</InitialPageButton>
   </InitialPageContainer>)
 }
